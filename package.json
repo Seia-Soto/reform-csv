@@ -1,0 +1,15 @@
+{
+  "name": "reform-csv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Seia-Soto <seia@outlook.kr>",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^4.9.0",
+    "knex": "^0.21.1",
+    "sqlite3": "^4.2.0"
+  },
+  "bin": {
+    "csv2sql": "./bin.js"
+  }
+}
