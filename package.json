@@ -11,5 +11,12 @@
   },
   "bin": {
     "csv2sql": "./bin.js"
+  },
+  "scripts": {
+    "export": "pkg . --target host --option expose-gc",
+    "build": "pkg . --target host --option expose-gc --build"
+  },
+  "devDependencies": {
+    "pkg": "^4.4.8"
   }
 }
