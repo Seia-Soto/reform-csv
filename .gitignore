@@ -118,3 +118,7 @@ dist
 # exports
 
 *.exe
+*.node
+
+# use yarn as default
+package-lock.json

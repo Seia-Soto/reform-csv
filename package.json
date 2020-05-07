@@ -13,10 +13,13 @@
     "csv2sql": "./bin.js"
   },
   "scripts": {
-    "export": "pkg . --target host --option expose-gc",
-    "build": "pkg . --target host --option expose-gc --build"
+    "pkg": "pkg . --target host --option expose-gc",
+    "make-build-directory": "shx mkdir ./build",
+    "copy-precompiled-sqlite": "shx cp ./node_modules/sqlite3/lib/binding/node**/* ./node_sqlite3.node",
+    "build": "npm install && npm run pkg && npm run copy-precompiled-sqlite"
   },
   "devDependencies": {
-    "pkg": "^4.4.8"
+    "pkg": "^4.4.8",
+    "shx": "^0.3.2"
   }
 }
